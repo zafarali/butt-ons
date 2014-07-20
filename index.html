@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./lib/butt-on.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./public/css/website.css">
+	<title>Butt-ons ~ Chained, Order-independant and Forgiving CSS3 Buttons</title>
+</head>
+<body>
+<div class="main-container">
+<h1>Butt-ons <small>Simple: in design, to remember.</small></h1>
+<p>
+	[ <a href="#docs">Documentation</a> ]
+	[ <a href="#examples">Examples</a> ]
+	[ <a href="#contribute">Contribute</a> ]
+	[ <a href="https://github.com/zafarali/butt-ons/issues">Issues</a> ]
+	[ <a href="http://twitter.com/zafarali">@zafarali</a> ]
+</p>
+<p>We've all wanted some simple buttons that complement our site look good. Buttons that fit in with the new flat revolution. We also want to easily remember how to class our buttons. Here, I present to you a <span class="emph">chained</span>, <span class="emph">forgiving</span> and <span class="emph">order-independant</span> way of styling buttons.</p>
+<div class="download">
+<a href="" class="butt-on-ultrawide-green">Download Minified<br /><small> V0.1 (1,869 bytes)</small></a><br />or 
+<a href="#" >Regular (2,850 bytes)</a></div>
+
+<h2 id="docs">Documentation</h2>
+	[ <a href="#regular">Basic</a> ]
+	[ <a href="#inheritance">Inheritance</a> ]
+	[ <a href="#modifiers">Modifiers</a> ]
+	[ <a href="#control">Size Control</a> ]
+	[ <a href="#control">Colors</a> ]
+<div class="demo">
+	<h3 id="regular">Regular ol' buttons <small>.butt-on</small></h3>
+	<p> Simple, Classy and Elegant, this narrow button should be the basis of all your button needs</p>
+	
+	<button class="butt-on">Buttons</button>
+	<a href="#regular" class="butt-on">Anchors</a>
+	<input type="submit" class="butt-on" value="Inputs?">
+	<pre class="code">&lt;button class=&quot;butt-on&quot;&gt;Buttons&lt;/button&gt;<br/>&lt;a href=&quot;#regular&quot; class=&quot;butt-on&quot;&gt;Anchors&lt;/a&gt;<br/>&lt;input type=&quot;submit&quot; class=&quot;butt-on&quot; value=&quot;Inputs?&quot;&gt;</pre>
+</div>
+
+<div class="demo" id="inherit">
+	<h3 id="inheritance">Inheritance <small>.butt-on</small></h3>
+	<p> All buttons will inherit their parents' font.</p>
+	<button class="butt-on">Click Me!</button>
+	<pre class="code">&lt;button class=&quot;butt-on&quot;&gt;Click Me!&lt;/button&gt;</pre>
+</div>
+
+<div class="demo">
+	<h3 id="modifiers">Modifiers <small>.-round, .-transp, .-border, .-over</small></h3>
+	<p> You can use the above prefixes to modify your buttons. And since Butt-on is forgiving, you can choose between <span class="emph">.transparent</span> or <span class="emph">.transp</span>, <span class="emph">.round</span> or <span class="emph">.rounded</span></p>
+	<button class="butt-on-transparent">Transp</button> or <button class="butt-on-transp">Transparent?</button>
+	<pre class="code">&lt;button class=&quot;butt-on-transparent&quot;&gt;Transp&lt;/button&gt;<br />&lt;button class=&quot;butt-on-transp&quot;&gt;Transparent?&lt;/button&gt;</pre>
+
+	<a class="butt-on-rounded">Rounded</a>
+	<pre class="code">&lt;a class=&quot;butt-on-rounded&quot;&gt;Rounded&lt;/a&gt;</pre>
+	<p>You can combine them...</p>
+	<a class="butt-on-rounded-transp">Rounded and Transparent</a>
+	<pre class="code">&lt;a class=&quot;butt-on-rounded-transp&quot;&gt;Rounded and Transparent&lt;/a&gt;</pre>
+	<p>In any order!</p>
+	<pre class="code">&lt;a class=&quot;butt-on-transp-round&quot;&gt;Rounded and Transparent&lt;/a&gt;</pre>
+	<p>We can override our button color,so that it has the default color but on hover is of a different color!</p>
+	<button class="butt-on-red-over">Red, Override</button>
+	<pre class="code">&lt;button class=&quot;butt-on-red-over&quot;&gt;Red, Override&lt;/button&gt;</pre>
+	<p>We can force a colored button to have a border.</p>
+	<button class="butt-on-red-border">Red, Border</button>
+	<pre class="code">&lt;button class=&quot;butt-on-red-border&quot;&gt;Red, Border&lt;/button&gt;</pre>
+</div>
+
+
+<div class="demo">
+	<h3 id="control">Size Control <small>.-wide, -high, -ultrawide, -ultrahigh</small></h3>
+	<p>Sometimes we want to make our buttons wider or taller. This is easy, we just need to specify what we need.</p>
+	<button class="butt-on-wide">I'm wide</button>
+	<a class="butt-on-high">I'm high</a>
+	<pre class="code">&lt;button class=&quot;butt-on-wide&quot;&gt;I'm wide&lt;/button&gt;<br/>&lt;a class=&quot;butt-on-high&quot;&gt;I'm high&lt;/a&gt;</pre>
+	<p>Ofcourse we can combine the two (in any order!)</p>
+	<a class="butt-on-ultrahigh-ultrawide">I'm (ultra) high and (ultra) wide</a>
+	<pre class="code">&lt;a class=&quot;butt-on-ultrahigh-ultrawide&quot;&gt;I'm (ultra) high and (ultra) wide&lt;/a&gt;</pre>
+</div>
+
+<div class="demo">
+	<h3 id="colors">Colors <small>.-red, .-turq, .-green, .-blue, .-purple, .-yellow, .-orange, .-offwhite, .-grey, .-gray</small></h3>
+	<p>All buttons need to be versatile in their colors! No longer do we need to remember btn-danger or btn-warn, or was it btn-red? Just prefix, in any order, with any combination of modifiers or size controllers.</p>
+	<a href="#colors" class="butt-on-red">Red Buttons</a>
+	<a href="#colors" class="butt-on-purple">Purple Buttons</a>
+	<a href="#colors" class="butt-on-blue">Blue Buttons</a>
+	<a href="#colors" class="butt-on-green">Green Buttons</a>
+	<a href="#colors" class="butt-on-yellow">Yellow Buttons</a>
+	<a href="#colors" class="butt-on-turq">Turqoise Buttons</a>
+	<a href="#colors" class="butt-on-orange">Orange Buttons</a>
+	<a href="#colors" class="butt-on-offwhite">Offwhite Buttons</a>
+	<a href="#colors" class="butt-on-gray">Gray Buttons</a>
+	<a href="#colors" class="butt-on-grey">Grey Buttons</a>
+	<p>The synax is forgiving so <span class="emph">.-turq</span> is the same as <span class="emph">.-turquoise</span> and you can even spell Gray/Grey however you want.</p>
+	<pre class="code">&lt;a href=&quot;#colors&quot; class=&quot;butt-on-red&quot;&gt;Red Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-purple&quot;&gt;Purple Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-blue&quot;&gt;Blue Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-green&quot;&gt;Green Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-yellow&quot;&gt;Yellow Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-turq&quot;&gt;Turqoise Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-orange&quot;&gt;Orange Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-offwhite&quot;&gt;Offwhite Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-gray&quot;&gt;Gray Buttons&lt;/a&gt;<br/>&lt;a href=&quot;#colors&quot; class=&quot;butt-on-grey&quot;&gt;Grey Buttons&lt;/a&gt;</pre>
+
+	<p>Colors were inspired by <a href="http://designmodo.github.io/Flat-UI/">Designmodo Flat-UI</a>
+</div>
+
+<div class="demo">
+	<h3 id="examples">Examples</h3>
+	<p>Some examples to convince you.</p>
+	<p>Use butt-ons in your landing pages:</p>
+	<div class="beach">
+		<h1>Your Perfect Vacation</h1>
+		<a href="#examples" class="butt-on-transp-orange-wide">Starts now...</a>
+	</div>
+	<pre class="code">
+	&lt;a href=&quot;#examples&quot; class=&quot;butt-on-transp-orange-wide&quot;&gt;Starts now...&lt;/a&gt;
+	</pre>
+
+	<p>Use them in your menubar:</p>
+	<div class="menubar">
+		MyBrandName.io <a href="#examples" class="butt-on-purple-override-rounded">Stories</a>
+		<a href="#examples" class="butt-on-purple-override-rounded">Products</a>
+		<a href="#examples" class="butt-on-purple-override-rounded">Pricing</a>
+		<a href="#examples" class="butt-on-purple-override-rounded">Demo</a>
+	</div>
+
+	<pre class="code">&lt;a href=&quot;#examples&quot; class=&quot;butt-on-purple-override-rounded&quot;&gt;Stories&lt;/a&gt;<br/>&lt;a href=&quot;#examples&quot; class=&quot;butt-on-purple-override-rounded&quot;&gt;Products&lt;/a&gt;<br/>&lt;a href=&quot;#examples&quot; class=&quot;butt-on-purple-override-rounded&quot;&gt;Pricing&lt;/a&gt;<br/>&lt;a href=&quot;#examples&quot; class=&quot;butt-on-purple-override-rounded&quot;&gt;Demo&lt;/a&gt;</pre>
+
+	<p>Or in a toolbar perhaps?</p>
+	<div class="menubar">
+		<a href="#examples" class="butt-on-rounded">Edit</a>
+		<a href="#examples" class="butt-on-rounded">Copy</a>
+		<a href="#examples" class="butt-on-rounded">Paste</a>
+		<a href="#examples" class="butt-on-red-override-rounded" style="float:right">Delete</a>
+	</div>
+	<pre class="code"
+	&lt;a href=&quot;#examples&quot; class=&quot;butt-on-rounded&quot;&gt;Edit&lt;/a&gt;<br/>&lt;a href=&quot;#examples&quot; class=&quot;butt-on-rounded&quot;&gt;Copy&lt;/a&gt;<br/>&lt;a href=&quot;#examples&quot; class=&quot;butt-on-rounded&quot;&gt;Paste&lt;/a&gt;<br/>&lt;a href=&quot;#examples&quot; class=&quot;butt-on-red-override-rounded&quot; style=&quot;float:right&quot;&gt;Delete&lt;/a&gt;
+	</pre>
+<p>Just buttons people!</p>
+<a href="http://twitter.com/zafarali" target="_blank" class="butt-on-ultrawide-rounded-blue-turq-high">@zafarali</a>	
+</div>
+
+
+<div class="demo">
+<h3 id="contribute">Contribute and Use <small>MIT License</small></h3>
+<p>Butt-ons is available under the <a href="https://github.com/zafarali/butt-ons/blob/master/LICENSE">MIT Licence</a> (also known as do whatever you like with it thought it would be nice if you give me a shout out!). </p>
+<p style="padding-left:20%">
+<iframe src="http://ghbtns.com/github-btn.html?user=zafarali&repo=butt-ons&type=fork&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+  <iframe src="http://ghbtns.com/github-btn.html?user=zafarali&repo=butt-ons&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+</p>
+</div>
+</div>
+</body>
+<footer>Copyright (c) 2014 Zafarali Ahmed
+<iframe src="http://ghbtns.com/github-btn.html?user=zafarali&repo=butt-ons&type=follow"
+  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe></footer>
+</html>

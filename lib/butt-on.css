@@ -1,0 +1,84 @@
+/* BUTT-ONs created by Zafarali Ahmed July 20th 2014
+Fork and make awesome: https://github.com/zafarali/butt-ons
+*/
+
+/* BASIC BUTTON STYLING*/
+[class^="butt-on"], [class^="butt-on"]:visited{
+	color:white;
+	font-family: inherit;
+	cursor:pointer;
+	text-decoration: none;
+	text-align: center;
+	background-color:#2C3E50;
+	padding: 0.5em; 
+	margin: 0.1em;
+	border: 1px none black;
+	-moz-transition:0.1s background-color ease-in-out;
+	-webkit-transition:0.1s background-color ease-in-out;
+	-o-transition:0.1s background-color ease-in-out;
+	transition:0.1s background-color ease-in-out;
+	display: inline-block;
+	font-size:1em;
+}
+/* BASIC BUTTON HOVER STYLING*/
+[class^="butt-on"]:hover{ color:white; background-color:#34495E; }
+
+/* BUTTON COLORS */
+[class*="-red"],[class*="-red"]:visited{ background-color: #C0392B; }
+[class*="-red"]:hover{ background-color: #E74C3C !important; }
+
+[class*="-turq"],[class*="-turq"]:visited{ background-color: #16A085; }
+[class*="-turq"]:hover{ background-color: #1ABC9C !important; }
+
+[class*="-green"],[class*="-green"]:visited{ background-color: #27AE60; }
+[class*="-green"]:hover{ background-color: #2ECC71 !important; }
+
+[class*="-blue"],[class*="-blue"]:visited{ background-color: #2980B9; }
+[class*="-blue"]:hover{ background-color: #3498DB !important; }
+
+[class*="-purple"],[class*="-purple"]:visited{ background-color: #8E44AD; }
+[class*="-purple"]:hover{ background-color: #9B59B6 !important; }
+
+[class*="-yellow"],[class*="-yellow"]:visited{ background-color: #F39C12; }
+[class*="-yellow"]:hover{ background-color: #F1C40F !important; }
+
+[class*="-orange"],[class*="-orange"]:visited{ background-color: #D35400; }
+[class*="-orange"]:hover{ background-color: #E67E22 !important; }
+
+[class*="-offwhite"],[class*="-offwhite"]:visited{ background-color: #BDC3C7; }
+[class*="-offwhite"]:hover{ background-color: #ECF0F1 !important; }
+
+[class*="-grey"],[class*="-gray"],[class*="-grey"]:visited,[class*="-gray"]:visited{ background-color: #7F8C8D; }
+[class*="-grey"]:hover,[class*="-gray"]:hover{ background-color: #95A5A6; }
+
+/* BUTTON MODIFIERS */
+/* Rounded borders */
+[class*="-round"]{ 
+	border: 1px none black; 
+	-moz-border-radius: 4%; 
+	-webkit-border-radius: 4%; 
+	-o-border-radius: 4%; 
+	border-radius: 4%; 
+}
+/* Overrider, will make button have default color but hover will be different*/
+[class*='-over'],[class*='-over']:visited{
+		background-color:#2C3E50;
+}
+/* Borders */
+[class*="-border"]{ border: 1px solid black; }
+
+/* Transparency */
+[class*='-transp'],[class*='-transp']:visited{
+	background-color:rgba(0,0,0,0);
+	border:1px black solid;
+	color:black;
+}
+[class*='-transp']:hover{ color:white; }
+
+/* HEIGHT AND WIDTH CONTROL */
+/* Width Control */
+[class*='-wide']{ padding-left: 3em; padding-right: 3em;}
+[class*='-ultrawide']{ padding-left: 5em; padding-right: 5em; }
+/* Height Control */
+[class*='-high']{ padding-top: 2em; padding-bottom: 2em; }
+[class*='-ultrahigh']{ padding-top: 3em; padding-bottom: 3em; }
