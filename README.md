@@ -20,16 +20,16 @@ I created butt-ons for this purpose. All we need to do to create a basic button 
 
 ## Colors
 Currently we support the following colors:
-1. red
-2. turq/turqo...
-3. green
-4. blue
-5. purple
-6. yellow
-7. purple
-8. orange
-9. offwhite
-10. grey/gray
+1. red  
+2. turq/turqo...  
+3. green  
+4. blue  
+5. purple  
+6. yellow  
+7. purple  
+8. orange  
+9. offwhite  
+10. grey/gray  
 
 Creating a new color is as easy as defining the following:
 ```css
