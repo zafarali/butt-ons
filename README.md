@@ -9,6 +9,16 @@ I was annoyed at the complexity of button libraries out there. Why did i have to
 
 I created butt-ons for this purpose. All we need to do to create a basic button is: `.butt-on`. If we want it red: `.butt-on-red`. What if we want a big red button? `.butt-on-red-high-wide` or `.butt-on-red-wide-high` or `.butt-on-high-red-wide`. All of these give the same result, you don't need to remember the order!  
 
+## How do I use this.
+
+1. Define the base class `.butt-on`  
+2. Define the modifiers/size controls/colors you'd like.  
+
+For example, if you want a wide green button with rounded corners (the ordering of the classed doesn't matter):
+```html
+<button class="butt-on-wide-green-rounded">Nice button here</button>
+```
+
 ## The complete list:
 - `.butt-on` - the basic button  
 - `.-transp`/`.-transpa..` - inverts the button so the background is transparent, when the user hovers over it turns into the color that we defined/is default.  
